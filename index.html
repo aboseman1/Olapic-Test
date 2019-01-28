@@ -2,19 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
+<!--This is a title so that the file is appropriately anmed -->
     <title>Olapic Front-End Dev Challenge</title>
 
+<!--Linking the JQuery library inside the index.html file so that the AJAX that we are doing in the main.js file is readable. Obtained this by serching for the JQuery CDN on Google and copying the most recent version.-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
 
+<!-- Linking CSS stylesheet to the HTML so that we can implement a CSS grid to organize the photos -->
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
     <H1>Check Out Our Products in Action</h1>
       <p>See some of our collection out in the wild. Imagine yourself in their shoes</p>
+
+<!--Created a div container in which the grid will be styled. Within the container contains 5 objects that will pull the image from the API to populate to the webpage. -->
 
     <div id-="container">
       <img id="gallery-img-0"/>
@@ -23,6 +27,8 @@
       <img id="gallery-img-3"/>
       <img id="gallery-img-4"/>
     </div>
+
+<!--Linking the main.js file to the index.html document. -->
 
     <script src="main.js"></script>
   </body>

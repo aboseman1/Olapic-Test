@@ -14,48 +14,67 @@ p {
   font-weight: bold;
 }
 
+/*Add styling to the div would allow me to control the construction of the css grid I wanted to create*/
 div {
   width: 95%;
   height: 75%;
   margin: 0 auto;
+/*Is the css style that allows me to input the grid formatting*/
   display: grid;
+/*Allows me to make the first image take up 50% of the row for the given column. IU have defined there to be 3 columsn.*/
   grid-template-columns: 50% 25% 25%;
+/* I have defined 2 rows that will take up equal amount of space in the column*/
   grid-template-rows: 50% 50%;
   grid-gap: 2px;
+
+/* Allos me to determine which images I want to assign to which area of the grid. I will specify these as I add styling for the image ids. I gave them a naming convention that matched the ID so it was easy to assign them.*/
   grid-area: "img-0 img-1 img-2"
             "img-0 img-3 img-4";
 }
 
+/* Allows me to add the first image to the grid*/
 #gallery-img-0 {
+
+/* I am assigning this image to the first area of the grid specified by "img-0".*/
   grid-area: "img-0";
+
+/*Allows the first image to take up the both rows in the first column.*/
   grid-row: span 2;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Allows me to add the second image to the grid*/
 #gallery-img-1 {
+  /* I am assigning this image to the second area of the grid specified by "img-1".*/
   grid-area: "img-1";
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Allows me to add the third image to the grid*/
 #gallery-img-2 {
+  /* I am assigning this image to the third area of the grid specified by "img-2".*/
   grid-area: "img-2";
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Allows me to add the fourth image to the grid*/
 #gallery-img-3 {
+  /* I am assigning this image to the fourth area of the grid specified by "img-3".*/
   grid-area: "img-3";
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Allows me to add the fifth image to the grid*/
 #gallery-img-4 {
+/* I am assigning this image to the fifth area of the grid specified by "img-4".*/
   grid-area: "img-4";
   width: 100%;
   height: 100%;
