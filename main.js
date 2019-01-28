@@ -8,6 +8,9 @@ $(function () {
       console.log(mediaJSON)
       $.each(mediaJSON, function(i, image) {
         console.log(mediaJSON[i].images.normal);
+        let imgURL = mediaJSON[i].images.normal;
+        console.log(imgURL);
+        $("#gallery-img-" + i).attr("src", imgURL);
       }
     )
     }
